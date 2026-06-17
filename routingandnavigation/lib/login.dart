@@ -7,8 +7,15 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber,
       appBar: AppBar(
-        title: const Text("Login"),
+        shadowColor: Colors.black,
+        elevation: 10,
+        title: const Text("Login",
+        style:TextStyle(color: Colors.white,
+        fontSize: 30,fontWeight: FontWeight.bold),),
+
+        centerTitle: true,
       ),
       body: Center(
         child: ElevatedButton(
